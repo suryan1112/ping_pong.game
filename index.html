@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,300&family=Tektur:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ping_pong.css">
+</head>
+<img src="Screenshot 2023-07-17 005147.png" alt="wall-1" id="left-wall">
+    <img src="Screenshot 2023-07-17 005147.png" alt="wall-2" id="right-wall">
+    <div id="bottom-spikes">
+        <img src="Screenshot 2023-07-17 013532.png" alt="" >
+        <img src="Screenshot 2023-07-17 013532.png" alt="" >
+        <img src="Screenshot 2023-07-17 013532.png" alt="" >
+        <img src="Screenshot 2023-07-17 013532.png" alt="" >
+        <img src="Screenshot 2023-07-17 013532.png" alt="" >
+    </div>
+    <div id="top-spikes">
+        <img src="Screenshot 2023-07-17 013532.png" alt="" >
+        <img src="Screenshot 2023-07-17 013532.png" alt="" >
+        <img src="Screenshot 2023-07-17 013532.png" alt="" >
+        <img src="Screenshot 2023-07-17 013532.png" alt="" >
+        <img src="Screenshot 2023-07-17 013532.png" alt="" >
+    </div>
+    <div id="score">
+        <b>score-s</b>
+        <div>red :<span id="red-score">0</span></div>
+        <div>blue :<span id="blue-score">0</span></div> 
+    </div>
+    <audio id="strike-audio" preload="auto">
+        <source src="tough2.mp3" type="audio/mp3">
+        <!-- Add additional source elements for different audio formats if needed -->
+      </audio>
+<body>
+    
+    <div class="block" id="lower"></div>
+    <div class="block" id="upper"></div>
+    <div class="ball" id="ball"></div>
+    
+    <script src="ping_pong.js"></script>
+</body>
+</html>

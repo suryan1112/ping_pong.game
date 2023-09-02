@@ -1,0 +1,96 @@
+html{
+    overflow: hidden;
+}
+#score{
+    position: absolute;
+    right:0;
+    top:50px;
+    width:200px;
+    /* border:2px solid; */
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Tektur', cursive;
+    font-size: 2em;
+}
+body{
+    /* background-image: linear-gradient(69deg,green,violet); */
+    background-color: #f7f7f7;
+    /* padding:0 20px; */
+    z-index: 1;
+    position: relative;
+    height: 98vh;
+    /* padding: 10; */
+    display: flex;
+    justify-content: center;
+}
+.block{
+    position: absolute;
+    /* right:0; */
+    width: 200px;
+    height: 50px;
+    border: 2px solid;
+    z-index: 1;
+    /* left:45vw; */
+}
+#upper{
+    top:0;
+    background-color: red;
+}
+#lower{
+    bottom:0;
+    background-color: blue;
+}
+.ball{
+    z-index: 1;
+    position:absolute;
+    top:55px;
+    /* left:50vw; */
+    border: 2px solid;
+    width:50px;height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    /* animation: myanimation 2s; */
+}
+@keyframes myanimation{
+    100%{width: 75px;height: 0px;}
+}
+img{
+    position:absolute;
+    /* left:0; */
+}
+#left-wall{
+    width:50px;
+    height: 98vh;
+    left:-50px;
+}
+ #right-wall{
+    width:50px;
+    height: 98vh;
+    right:-50px;
+}
+#top-spikes{
+    position: absolute;
+    width:97vw;
+    /* height: 50px; */
+    top:0;
+    display: flex;
+    justify-content: center;
+    /* margin:auto; */
+}
+#top-spikes>img{
+    position: relative;
+    width:350px; height: 50px;
+    transform: rotate(180deg);
+} 
+#bottom-spikes{
+    position: absolute;
+    width:97vw;
+    /* height: 50px; */
+    bottom:0;
+    display: flex;
+    justify-content: center;
+}
+#bottom-spikes>img{
+    position: relative;
+    width:350px; height: 50px;
+} 
+
