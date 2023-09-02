@@ -2,7 +2,7 @@ var bottom_chance=true;
 var towards_right=true;
 var red_score=0;
 var blue_score=0;
-
+document.getElementById("loose").volume=0.5;
 function reset_game(){
     document.getElementById("red-score").textContent="0";
     document.getElementById("blue-score").textContent="0";
@@ -53,7 +53,7 @@ document.addEventListener("keydown",function(event){
                         // ball.style.animation="myanimation 0.5s";
                         red_score++;
                         document.getElementById("red-score").textContent=red_score;
-                        
+                        document.getElementById("loose").play()
                         if(red_score==5){
                             setTimeout(() => {
                                 alert("🥳 ❤️ ~ RED WINS ~ ❤️ 🥳");
@@ -82,13 +82,14 @@ document.addEventListener("keydown",function(event){
                 if(current_pos.y<=75){
                     if((current_pos_upper>=current_pos.x+50 || current_pos_upper<current_pos.x-200) && current_pos.y<=50){
                         blue_score++;
+                        document.getElementById("loose").play()
                         document.getElementById("blue-score").textContent=blue_score;
                         if(blue_score==5){
                             setTimeout(() => {
                                 alert("🥳💙 ~ BLUE WINS ~ 💙🥳");
                                 reset_game();
                             }, 500);}
-                            
+                        
                         clearInterval(id);
                         bottom_chance=true;
                     }
